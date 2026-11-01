@@ -1,0 +1,92 @@
+
+/* General page styling */
+body {
+    background: linear-gradient(135deg, #e0f2fe, #f3e8ff);
+    font-family: Arial, sans-serif;
+    color: #222;
+    min-height: 100vh;
+}
+
+/* Main heading */
+h1 {
+    color: #1e3a8a;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+/* Introduction */
+header p {
+    color: #555;
+    font-size: 18px;
+}
+
+/* Quiz container */
+#quiz-container {
+    max-width: 750px;
+    margin: auto;
+}
+
+/* Question cards */
+.question-block {
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Question headings */
+.question-block h2 {
+    color: #1e40af;
+    margin-bottom: 15px;
+}
+
+/* Answer buttons */
+.answer-btn {
+    text-align: left;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.answer-btn:hover {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+/* Selected answer */
+.answer-btn.selected {
+    background-color: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+/* Show Results button */
+#show-result {
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+/* Result section */
+#result-container {
+    max-width: 750px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+/* Mobile responsive styling */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .answer-btn {
+        width: 100%;
+        margin: 5px 0 !important;
+    }
+
+    .question-block {
+        padding: 15px !important;
+    }
+}
